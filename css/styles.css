@@ -168,7 +168,7 @@ div a.hero-down{
 #burger.abierto .barra.inferior{
     transform: translateY(-8px) rotateZ(-45deg);
 }
- @media (max-width: 620px){
+ @media (max-width: 400px){
     #burger{
         display: block;
     }
