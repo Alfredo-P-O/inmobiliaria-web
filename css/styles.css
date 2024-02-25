@@ -6,11 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    cursor: pointer;
-    color: inherit;
-}
 
 /* Generelaes */
 html{
@@ -28,6 +23,11 @@ body{
 /* Responsive para imagenes a todas las pantallas y dispositivos */
 img{
     max-width: 100%;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
 }
 
 /* Hero */
@@ -138,6 +138,76 @@ div a.hero-down{
     div a.hero-down{
         width: 20% ;
     }
+}
+
+/* Barra de navegacion lateral */
+#burger{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+#burger .barra{
+    width: 30px;
+    height: 2px;
+    margin: 6px;
+    background-color: #a97c50;
+    transition: 300ms all ease-in-out;
+}
+#burger.abierto .barra{
+    background-color: white;
+}
+#burger.abierto .barra.superior{
+    transform: translateY(8px) rotateZ(45deg);
+}
+#burger.abierto .barra.media{
+    width: 0;
+}
+#burger.abierto .barra.inferior{
+    transform: translateY(-8px) rotateZ(-45deg);
+}
+ @media (max-width: 620px){
+    #burger{
+        display: block;
+    }
+    header nav{
+        display: none;
+    }
+    header{
+       justify-content: flex-end;
+    }
+ }
+
+/* Menu Lateral */
+.menu{
+    width: 360px;
+    height: 100vh;
+    background-color: #424242;
+    position: fixed;
+    top: 0;
+    left: -360px;
+    /* left: 0; */
+    padding-top: 40px;
+    transition: all 500ms ease-in-out;
+}
+.menu.abierto{
+    left: 0;
+}
+.menu nav{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.menu nav a{
+    padding: 0.6rem 0;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 1.1rem;
+    transition: 300ms all ease-in-out;
+}
+.menu nav a:hover{
+    color: white;
 }
 
 /* Layout */
