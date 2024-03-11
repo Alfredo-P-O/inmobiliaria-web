@@ -81,7 +81,7 @@ a{
 header{
     background-color: white;
     box-shadow: 1.5px 1.5px 4px #b3b3b3;
-    height: 80px;
+    height: 70px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -157,7 +157,7 @@ div a.hero-down{
     transition: 300ms all ease-in-out;
 }
 #burger.abierto .barra{
-    background-color: white;
+    background-color: #a97c50;
 }
 #burger.abierto .barra.superior{
     transform: translateY(8px) rotateZ(45deg);
@@ -213,4 +213,119 @@ div a.hero-down{
 /* Layout */
 .primera{
     margin-top: 100vh;
+}
+#pr {
+    display: block;
+    margin-top: -83px;
+    padding-top: 83px;
+}
+.fila{
+    display: flex;
+    padding: 1rem 0.8rem;
+
+}
+.col-100{
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+.col-75{
+    width: 75%;
+    padding: 0.5rem 1rem;
+}
+.col-66{
+    width: 66.6%;
+    padding: 1rem 1rem;
+}
+.col-50{
+    width: 50%;
+    padding: 0.5rem 1rem;
+}
+.col-33{
+    width: 33.3%;
+    padding: 1rem 1rem;
+}
+.col-25{
+    width: 25%;
+    padding: 0.5rem 1rem;
+}
+@media (max-width: 720px) {
+    .fila{
+        flex-direction: column;
+        padding: 1rem .5rem;
+    }
+    .col-75,
+    .col-66,
+    .col-50,
+    .col-33,
+    .col-25{
+        width: 100%;
+    }
+}
+
+/* Codigo reutilizable */
+.flex-start,
+.flex-center,
+.flex-end,
+.flex-between,
+.flex-around,
+.flex-colum-center {
+    display: flex;
+    align-items: center;
+}
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-center {
+    justify-content: center;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.flex-around {
+    justify-content: space-around;
+}
+.flex-colum-center {
+    flex-direction: column;
+}
+
+/* Parallax */
+.fila.parallax{
+    background-image: url(../img/property5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 2rem 1rem;
+}
+.fila.parallax div{
+    background-color: rgba(255, 255, 255, 0.70);
+    padding: 1.5rem 1rem;
+}
+.fila.parallax div p{
+    font-size: 1.5rem;
+    color: #a97c50;
+    text-align: center;
+}
+
+.caja-nav img{
+    width: 20%;
+    margin-bottom: .5rem;
+}
+.caja-nav a{
+    border: .1rem solid #a97c50;
+    background-color: white;
+    color: #a97c50;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.caja-nav a:hover{
+    background-color: #a97c50;
+    color: white;
 }
