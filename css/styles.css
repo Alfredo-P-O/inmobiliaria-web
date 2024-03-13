@@ -504,3 +504,22 @@ footer p.copy{
 .card .footer-card a:hover{
     background-color: #8c6743;
 }
+/* Mas informacion de las cards */
+.propiedad{
+    margin-top: 70px;
+    background-image: url(../img/property5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.propiedad div:first-child{
+    background-color: rgba(255, 255, 255, 0.81);
+}
+.propiedad div:first-child h2{
+    font-size: 1.5rem;
+    color: #a97c50;
+}
+.propiedad div:first-child p img{
+    width: 2rem;
+    height: 2rem;
+}
