@@ -217,7 +217,9 @@ div a.hero-down{
 .primera{
     margin-top: 100vh;
 }
-#pr {
+#pr,
+#privacidad,
+#avisos {
     display: block;
     margin-top: -83px;
     padding-top: 83px;
@@ -522,4 +524,8 @@ footer p.copy{
 .propiedad div:first-child p img{
     width: 2rem;
     height: 2rem;
+}
+
+.fila.contacto{
+    margin-top: 70px;
 }
