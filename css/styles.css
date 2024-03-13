@@ -29,6 +29,9 @@ a{
     cursor: pointer;
     color: inherit;
 }
+p{
+    margin-bottom: .8rem;
+}
 
 /* Hero */
 .hero{
@@ -224,6 +227,7 @@ div a.hero-down{
     padding: 1rem 0.8rem;
 
 }
+/* Seccion para definir el tamaño de un elemento o columna */
 .col-100{
     width: 100%;
     padding: 0.5rem 1rem;
@@ -262,7 +266,7 @@ div a.hero-down{
     }
 }
 
-/* Codigo reutilizable */
+/* Codigo reutilizable para centrar o ajustar un elemento */
 .flex-start,
 .flex-center,
 .flex-end,
@@ -289,6 +293,32 @@ div a.hero-down{
 }
 .flex-colum-center {
     flex-direction: column;
+}
+
+/* Margenes y Espaciados */
+.mt-t{
+    margin-top: 1rem;
+}
+.mt-b{
+    margin-bottom: 1rem;
+}
+.mt-l{
+    margin-left: 1rem;
+}
+.mt-r{
+    margin-right: 1rem;
+}
+.mt-t-small{
+    margin-top: .5rem;
+}
+.mt-b-small{
+    margin-bottom: .5rem;
+}
+.mt-l-small{
+    margin-left: .5rem;
+}
+.mt-r-small{
+    margin-right: .5rem;
 }
 
 /* Parallax */
@@ -402,4 +432,28 @@ input[type="checkbox"] + label::before{
 }
 input[type="checkbox"]:checked + label::before{
     content: url(../img/check-square.svg);
+}
+
+/* Footer */
+footer{
+    background-color: #424242;
+}
+footer p{
+    color: white;
+}
+footer p:first-child{
+    color: #a97c50;
+    font-weight: bold;
+}
+footer img.rrss{
+    height: 3rem;
+}
+footer a{
+    font-size: .8rem;
+    color: #a97c50;
+}
+footer p.copy{
+    font-size: .6rem;
+    color: aliceblue;
+    text-align: center;
 }
