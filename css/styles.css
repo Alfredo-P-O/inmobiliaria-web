@@ -457,3 +457,50 @@ footer p.copy{
     color: aliceblue;
     text-align: center;
 }
+.fila.grid{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-gap: 1.5rem;
+    justify-content: center;
+}
+.card{
+    width: 100%;
+    max-width: 360px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.card img{
+    height: 320px;
+}
+.card .footer-card{
+    padding: 0.8rem;
+    width: 100%;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.card .footer-card p{
+    margin-bottom: .5rem;
+}
+.card .footer-card p:first-child{
+    font-weight: bold;
+}
+.card .footer-card a{
+    background-color: #a97c50;
+    color: white;
+    font-size: .8rem;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    align-self: center;
+    transition: all 300ms  ease-in-out;
+}
+.card .footer-card a:hover{
+    background-color: #8c6743;
+}
