@@ -73,6 +73,9 @@
                     <img class="mt-r-small" src="img/contract.svg" alt="">
                     Lorem, ipsum dolor.
                 </p>
+                <p class="flex-end">
+                    <button onclick="toggleModel()">Ver mas fotos</button>
+                </p>
             </div>
             <div class="col-50">
 
@@ -132,6 +135,29 @@
             <p class="copy mt-t">&copy; Lorem ipsum dolor sit amet.</p>
         </div>
     </footer>
+
+    <div class="overlay"></div>
+
+    <div class="carousel">
+        <div class="slide">
+            <img src="img/thumb2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/thumb3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/thumb4.jpg" alt="">
+        </div>
+    
+        <div class="x-modal" onclick="toggleModel()">
+            <img src="img/x.svg" alt="">
+        </div>
+        <div class="right-arrow" onclick="nextSlides()">
+            <img src="img/right.svg" alt="">
+        </div>
+    </div>
+
+    <script src="js/carousel.js"></script>
 
 </body>
 </html>
